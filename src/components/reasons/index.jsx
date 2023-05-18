@@ -1,8 +1,6 @@
 import React from "react";
 import "./index.css";
-import best from "../../assets/best.png";
-import securecloud from "../../assets/securecloud.png";
-import insurance from "../../assets/insurance.png";
+import insurance from "../../assets/iglobe.png";
 import trust from "../../assets/trust.png";
 import easy from "../../assets/easy-to-use.png";
 import support from "../../assets/support.png";
@@ -30,12 +28,12 @@ const Reasons = () => {
             </div>
           </div> */}
           <div className="reasons-card">
-            <img src={insurance} alt="" />
+            <img src={insurance} alt="" width="64" height="64"  />
             <div className="reason-text">
-              <h4 className="rs-title">Protected by insurance</h4>
+              <h4 className="rs-title"> Registered company</h4>
               <p className="rs-desc">
-                We are registered under many insurance company, which means the
-                risk of loosing your capital investment is almost zero
+              We are a legal company registered in the Switzerland providing
+               its investment services to the members all around the worlds.
               </p>
             </div>
           </div>

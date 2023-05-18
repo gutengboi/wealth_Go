@@ -1,9 +1,4 @@
 import React from "react";
-import farmer from "../../assets/Farmer-bro.png";
-import plan1 from "../../assets/plan1.png";
-import plan2 from "../../assets/plan2.png";
-import plan3 from "../../assets/plan3.png";
-import plan4 from "../../assets/plan4.png";
 import "./index.css";
 
 const Plans = ({ name }) => {
@@ -28,8 +23,8 @@ const Plans = ({ name }) => {
             {/* <img src={plan1} alt="" className="card-img" /> */}
             <div className="card-body">
               <p className="card-text">AFTER 24 HOURS</p>
-              <p className="card-text">Min : $30</p>
-              <p className="card-text">Max : $499</p>
+              <p className="card-text">Minimum Deposit : $30</p>
+              <p className="card-text">Maximum deposit : $499</p>
               <p className="card-text">PRINCIPAL RETURN</p>
             </div>
             <button className="card-btn">{name}</button>
@@ -42,8 +37,8 @@ const Plans = ({ name }) => {
             {/* <img src={plan2} alt="" className="card-img" /> */}
             <div className="card-body">
               <p className="card-text">AFTER 24 HOURS</p>
-              <p className="card-text">Min : $500</p>
-              <p className="card-text">Max : $999</p>
+              <p className="card-text">Minimum Deposit : $500</p>
+              <p className="card-text">Maximum deposit : $999</p>
               <p className="card-text">PRINCIPAL RETURN</p>
             </div>
             <button className="card-btn">{name}</button>
@@ -56,8 +51,8 @@ const Plans = ({ name }) => {
             {/* <img src={plan3} alt="" className="card-img" /> */}
             <div className="card-body">
               <p className="card-text">AFTER 48 HOURS</p>
-              <p className="card-text">Min : $1000</p>
-              <p className="card-text">Max : $4999</p>
+              <p className="card-text">Minimum Deposit : $1000</p>
+              <p className="card-text">Maximum deposit : $4999</p>
               <p className="card-text">PRINCIPAL RETURN</p>
             </div>
             <button className="card-btn">{name}</button>
@@ -70,8 +65,8 @@ const Plans = ({ name }) => {
             {/* <img src={plan4} alt="" className="card-img" /> */}
             <div className="card-body">
               <p className="card-text">AFTER 72 HOURS</p>
-              <p className="card-text">Min : $5000</p>
-              <p className="card-text">Max : $UNLIMITED</p>
+              <p className="card-text">Minimum Deposit: $5000</p>
+              <p className="card-text">Maximum deposit : $UNLIMITED</p>
               <p className="card-text">PRINCIPAL RETURN</p>
             </div>
             <button className="card-btn">{name}</button>

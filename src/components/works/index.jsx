@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
 import bank from "../../assets/bank.svg";
-import create from "../../assets/create.svg";
+import create from "../../assets/persorepo.svg";
 import invest from "../../assets/invest.svg";
-import investment from "../../assets/investment.svg";
+
 
 const Works = () => {
   return (
@@ -29,7 +29,7 @@ const Works = () => {
               <img src={bank} alt="sign up" className="work-img" />
             </div>
             <div className="work-text">
-              <p className="work-desc">Choose a plan and invest</p>
+              <p className="work-desc">Make a deposit</p>
             </div>
           </div>
           <div className="works-step">
@@ -37,7 +37,7 @@ const Works = () => {
               <img src={invest} alt="sign up" className="work-img" />
             </div>
             <div className="work-text">
-              <p className="work-desc">Make deposit & start earning</p>
+              <p className="work-desc">Choose a plan & start earning</p>
             </div>
           </div>
         </div>
