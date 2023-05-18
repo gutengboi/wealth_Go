@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./index.css";
-import aboutpic from "../../assets/imx.jpeg";
+import aboutpic from "../../assets/imx.jpg";
 import avatar from "../../assets/ceo.jpeg";
 import avatar2 from "../../assets/pam.jpeg";
 import avatar3 from "../../assets/chin.jpeg";
