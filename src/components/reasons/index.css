@@ -2,7 +2,7 @@
   width: 100%;
   padding: 1rem 2rem;
   min-height: 650px;
-  background: #f1f4ea;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,8 @@
   flex-direction: column;
   gap: 2rem;
   background: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: #fff;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 .reason-text {
   text-align: center;

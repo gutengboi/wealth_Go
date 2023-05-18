@@ -62,7 +62,7 @@ const Customers = () => {
     {
       field: "createdAt",
       headerName: "Joined",
-      minWidth: 100,
+      minWidth: 250,
       flex: 1,
     },
   ];

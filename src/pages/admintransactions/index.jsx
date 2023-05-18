@@ -170,7 +170,7 @@ const AdminTransactions = () => {
     {
       field: "createdAt",
       headerName: "Created At",
-      minWidth: 100,
+      minWidth: 250,
       flex: 0.5,
     },
     {

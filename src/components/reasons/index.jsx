@@ -19,7 +19,7 @@ const Reasons = () => {
           <h2 className="title">What Differentiate Us From Other Companies</h2>
         </div>
         <div className="reasons-cards">
-          <div className="reasons-card">
+          {/* <div className="reasons-card">
             <img src={securecloud} alt="" />
             <div className="reason-text">
               <h4 className="rs-title">Secure Storage</h4>
@@ -28,7 +28,7 @@ const Reasons = () => {
                 with end to end encrypting technologies
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="reasons-card">
             <img src={insurance} alt="" />
             <div className="reason-text">
@@ -39,7 +39,7 @@ const Reasons = () => {
               </p>
             </div>
           </div>
-          <div className="reasons-card">
+          {/* <div className="reasons-card">
             <img src={best} alt="" />
             <div className="reason-text">
               <h4 className="rs-title">Industry best practices</h4>
@@ -49,7 +49,7 @@ const Reasons = () => {
                 offer guidance on the same.
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="reasons-card">
             <img src={trust} alt="" />
             <div className="reason-text">
