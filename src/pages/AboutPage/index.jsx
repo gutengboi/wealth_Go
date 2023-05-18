@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./index.css";
-import aboutpic from "../../assets/business.jpg";
+import aboutpic from "../../assets/imx.jpeg";
 import mission from "../../assets/mission.png";
 import values from "../../assets/values.png";
-import avatar from "../../assets/avatar.jpg";
-import avatar2 from "../../assets/avatar2.jpg";
-import avatar3 from "../../assets/avatar3.jpg";
+import avatar from "../../assets/ceo.jpeg";
+import avatar2 from "../../assets/pam.jpeg";
+import avatar3 from "../../assets/chin.jpeg";
 const Aboutpage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,41 +21,33 @@ const Aboutpage = () => {
       <div className="about-pageContainer">
         <img src={aboutpic} className="abouts-img" alt="" />
         <div className="ourstory">
-          <h3>Our Story</h3>
+          <h3>WealthGo powers the cryptoeconomy</h3>
           <p className="our-story">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            recusandae dolores optio tenetur sapiente voluptas dolor incidunt,
-            deleniti tempore nam ab saepe voluptatum velit provident ut ullam
-            magnam eveniet repudiandae. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Beatae id quo sequi ab voluptas obcaecati
-            architecto ea rerum animi! Vel quaerat recusandae soluta doloremque
-            temporibus accusamus aliquid quae molestiae nulla. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Odio vel recusandae quasi,
-            tenetur nam a repellat, commodi, tempora iusto voluptatibus eligendi
-            repellendus pariatur neque magnam ducimus laudantium veritatis unde
-            reprehenderit.
+          Customers around the world discover and begin their
+           journeys with crypto through WealthGo. Approximately 35k+ 
+           verified users and 2000+ ecosystem partners in over 100 countries
+            trust WealthGo to easily and securely invest, spend, save, earn, 
+            and use crypto.
           </p>
         </div>
         <div className="aboutpage-textContainer">
           <div className="about-mission">
             <div className="mission-text">
-              <h3>Our Mission</h3>
+              <h3>Mission</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                omnis laboriosam, deleniti a expedita tenetur natus maxime error
-                minus sunt praesentium facilis accusamus velit, architecto dolor
-                quisquam rem iste unde!
+              Our mission is to increase economic freedom in the world
+              Everyone deserves access to financial services that can 
+              help empower them to create a better life for themselves 
+              and their families. If the world economy ran on a common 
+              set of standards that could not be manipulated by any 
+              company or country, the world would be a more fair and
+               free place, and human progress would accelerate.
               </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                omnis laboriosam, deleniti a expedita tenetur natus maxime error
-                minus sunt praesentium facilis accusamus velit, architecto dolor
-                quisquam rem iste unde!
-              </p>
+            
             </div>
-            <img src={mission} alt="" className="mission-img" />
+            {/* <img src={mission} alt="" className="mission-img" /> */}
           </div>
-          <div className="about-values">
+          {/* <div className="about-values">
             <img src={values} alt="values" className="mission-img" />
             <div className="mission-values">
               <h3>Our Values</h3>
@@ -70,29 +62,29 @@ const Aboutpage = () => {
                 omnis laboriosam, deleniti
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="about-team">
-            <h2 className="team-header">Meet Our Team</h2>
+            <h2 className="team-header">Our Executive Team</h2>
             <div className="team-container">
               <div className="team-leaders">
                 <img src={avatar} alt="" className="team-exec" />
                 <div className="leaders-text">
-                  <h5>name</h5>
-                  <p>Title</p>
+                  <h5>Schinecker Lechner</h5>
+                  <p>Founder & Chief Executive Officer</p>
                 </div>
               </div>
               <div className="team-leaders">
                 <img src={avatar2} alt="" className="team-exec" />
                 <div className="leaders-text">
-                  <h5>name</h5>
-                  <p>Title</p>
+                  <h5>Ivy Richard</h5>
+                  <p>Investment Advisor</p>
                 </div>
               </div>
               <div className="team-leaders">
                 <img src={avatar3} alt="" className="team-exec" />
                 <div className="leaders-text">
-                  <h5>name</h5>
-                  <p>Title</p>
+                  <h5>Neil Williams</h5>
+                  <p>Chief Financial Officer</p>
                 </div>
               </div>
             </div>
