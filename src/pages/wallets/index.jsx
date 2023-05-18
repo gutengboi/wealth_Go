@@ -81,11 +81,19 @@ const Wallet = () => {
           <div className="p-form">
             <div className="form_input">
               <label htmlFor="">BTC QR</label>
-              <input type="text" name="btcQr" value={btcQr} />
+              <input type="text" 
+              name="btcQr" 
+              value={btcQr}
+              onChange={(e) => setBtcQr(e.target.value)}
+               />
             </div>
             <div className="form_input">
               <label htmlFor="">BTC WALLET</label>
-              <input type="email" name="btcWallet" value={btcWallet} />
+              <input type="email" 
+              name="btcWallet" 
+              value={btcWallet}
+              onChange={(e) => setBtcWallet(e.target.value)} 
+              />
             </div>
             <div className="form_input">
               <label htmlFor="">ETH QR</label>
