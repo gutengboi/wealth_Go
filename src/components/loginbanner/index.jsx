@@ -7,9 +7,14 @@ const LoginBanner = () => {
       <div className="loginbanner-container">
         <div className="loginbanner-header">
           <h1 className="title">
-            Become part of a community of people who have found their path to
-            the crypto world with WealthGO
+          Referral Commission 5%
           </h1>
+          <p className="description">
+          Become WealthGo affiliate and enjoy high commissions 
+          for lifetime; You’ll earn 5% commission every time if
+           your downline made a deposit. There is no limitation
+            for the commission.
+          </p>
         </div>
         <div className="">
           <button className="loginbanner-btn">Get Started</button>

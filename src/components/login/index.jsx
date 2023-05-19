@@ -45,7 +45,7 @@ const Login = () => {
               })
             );
           // redirect("/dashboard");
-          window.location.href = "https://wealth-go.vercel.app/dashboard";
+          window.location.href = "https://wealth-go-gutengboi.vercel.app//dashboard";
         });
     } catch (error) {}
     onSubmitProps.resetForm();
