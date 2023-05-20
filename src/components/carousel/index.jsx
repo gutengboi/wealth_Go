@@ -21,7 +21,7 @@ const HomeCarousel = () => {
           Join millions of people globally, to invest, manage and grow 
           cryptocurrencies the secure and seamless way. Sign up and start growing your profit today!
           </p>
-          <button className="hero-btn">Get Started</button>
+          <button className="hero-btn" onClick={() => navigate("/register")}>Get Started</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,7 +36,7 @@ const HomeCarousel = () => {
           business of doing things just because they are routine. We are in the business of 
           creating solutions that are simply mind-blowing. 
           </p>
-          <button className="hero-btn" >Get Started</button>
+          <button className="hero-btn" onClick={() => navigate("/register")} >Get Started</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
