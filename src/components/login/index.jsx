@@ -28,7 +28,8 @@ const Login = () => {
     if (user) {
       console.log(user);
       // navigate("/dashboard");
-      window.location.href = "https://wealth-go.vercel.app/dashboard";
+      // window.location.href = "https://wealth-go.vercel.app/dashboard";
+      window.location.href = "https://wealth-go-gutengboi.vercel.app/dashboard";
     }
   }, [user, navigate]);
 
