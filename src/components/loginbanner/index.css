@@ -44,7 +44,7 @@
   border: none;
 }
 
-.description{
-  font-family: "Lato";
-  background: #5ba601;
+.description1{
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #5ba601;
 }

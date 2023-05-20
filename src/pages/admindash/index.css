@@ -65,7 +65,7 @@
 .cards-text {
   font-size: clamp(1.125rem, 1.0568rem + 0.5455vw, 1.5rem);
   color: #165e3b;
-  font-family: "Goldman", cursive;
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .arrow-right {
   width: 0;
@@ -79,7 +79,7 @@
   font-weight: 600;
   font-size: clamp(1.0625rem, 1.0057rem + 0.4545vw, 1.375rem);
   color: #fff;
-  font-family: "Goldman", cursive;
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   display: flex;
   align-items: center;
   gap: 2rem;

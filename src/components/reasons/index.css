@@ -46,15 +46,15 @@
 .rs-title {
   font-size: clamp(1.125rem, 1.0809rem + 0.3529vw, 1.5rem);
   font-weight: 600;
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #5ba601;
 }
 .rs-desc {
   font-size: clamp(0.7125rem, 0.7978rem + 0.1176vw, 0.8375rem);
   font-weight: 200;
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #222;
 }
 .title {
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }

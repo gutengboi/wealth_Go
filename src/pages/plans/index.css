@@ -37,7 +37,7 @@
   color: #165e3b;
   font-weight: 600;
   text-transform: capitalize;
-  font-family: "Goldman", cursive;
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .planpage-card h1 {
   font-size: clamp(2.5rem, 0.8553rem + 2.9474vw, 5.25rem);

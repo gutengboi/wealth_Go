@@ -49,7 +49,7 @@
   padding: 0.6rem 5.5rem;
   border: 0.5px solid  #5ba601;
   color: #fff;
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   border-radius: 7px;
   font-size: 17px;
   cursor: pointer;
@@ -63,18 +63,18 @@
 .card-text {
   font-size: 13px;
   font-weight: bold;
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .card_title {
   font-size: 70px;
   /* clamp(0.9375rem, 0.2344rem + 2.25vw, 1.9rem); */
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .card_subtitle {
   font-size: 25px;
   /* clamp(0.78125rem, 0.6641rem + 0.375vw, 0.875rem); */
   color: #165e3b;
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 

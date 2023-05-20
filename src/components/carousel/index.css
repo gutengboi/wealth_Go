@@ -11,7 +11,7 @@
 .hero-title {
   text-align: center;
   font-size: clamp(1.875rem, -0.625rem + 8vw, 3.875rem);
-  font-family: "Goldman";
+  font-family: PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 600;
   /* color: #165e3b; */
   color: white;
@@ -19,7 +19,7 @@
 .hero-description {
   text-align: center;
   color: white;
-  font-family: "Goldman";
+  font-family: PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: clamp(0.9375rem, 0.2344rem + 2.25vw, 1.5rem);
 }
 .caro-img {
@@ -32,7 +32,7 @@
   background: #5ba601;
   color: white;
   border: none;
-  font-family: "Goldman";
+  font-family: PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 17px;
   cursor: pointer;
   margin-top: 1.2rem;
@@ -40,7 +40,7 @@
 
 .hero-color {
   color: #5ba601;
-  font-family: "Goldman", cursive;
+  font-family: PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @media screen and (max-width: 850px) {

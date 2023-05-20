@@ -20,7 +20,7 @@ ul {
 .subtitle {
   font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.45rem);
   color: black;
-  font-family: "Goldman", cursive;
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   font-style: italic;
 }
 
@@ -32,7 +32,7 @@ ul {
 }
 .small-title {
   font-size: clamp(1.5rem, 0.5625rem + 3vw, 1.75rem);
-  font-family: "Goldman", cursive;
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #165e3b;
   font-weight: 700;
 }

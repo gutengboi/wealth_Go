@@ -12,7 +12,10 @@ const Banner = () => {
     <div className="banner">
       <div className="banner-container">
         <div className="banner-header">
-          <h2 className="title">Trusted By Over 2000+ Partners</h2>
+          <h2 className="title">Trusted By Over   
+          <font size="6" color="#5ba601">2000+ Partners</font>
+            </h2>
+          
           <div className="banner-img">
             <img src={airbnb} alt="airbnb" className="banner-logo" />
             <img src={framer} alt="framer" className="banner-logo" />

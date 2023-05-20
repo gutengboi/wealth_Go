@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import hero from "../../assets/tomato.png";
 import mine from "../../assets/mine.png";
@@ -6,6 +7,8 @@ import realestate from "../../assets/realestate.png";
 import "./index.css";
 
 const HomeCarousel = () => {
+  const navigate = useNavigate();
+
   return (
     <Carousel>
       <Carousel.Item>
@@ -33,7 +36,7 @@ const HomeCarousel = () => {
           business of doing things just because they are routine. We are in the business of 
           creating solutions that are simply mind-blowing. 
           </p>
-          <button className="hero-btn">Get Started</button>
+          <button className="hero-btn" >Get Started</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -52,7 +55,7 @@ const HomeCarousel = () => {
            investment. We have used cutting edge technologies with extensive infrastructure intented 
            to make things more convenient.
           </p>
-          <button className="hero-btn">Get Started</button>
+          <button className="hero-btn" onClick={() => navigate("/register")}>Get Started</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

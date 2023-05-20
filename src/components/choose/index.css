@@ -58,10 +58,10 @@
   font-weight: 600;
   text-align: left;
   color: #5ba601;
-  font-family: "Lato";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .ch-desc {
-  font-family: "Lato";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   text-align: justify;
   font-weight: 200;
   font-size: 13.5px;

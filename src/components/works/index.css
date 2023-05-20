@@ -47,7 +47,7 @@
   text-align: left;
   font-size: clamp(1.125rem, 1.0455rem + 0.6364vw, 1.5625rem);
   font-weight: 600;
-  font-family: 'Lato';
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .work-img {
   width: 50%;

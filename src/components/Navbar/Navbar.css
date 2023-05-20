@@ -14,7 +14,7 @@
 }
 .nav-logo {
   color: #fff;
-  font-family: "Goldman";
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   cursor: pointer;
 }
 .nav-links {

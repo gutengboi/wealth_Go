@@ -12,7 +12,7 @@
   gap: 1rem;
 }
 .login-title {
-  font-family: "Goldman", cursive;
+  font-family:  PostGrotesk-Medium, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #165e3b;
   font-weight: 600;
   font-size: clamp(1.25rem, 1.011rem + 0.4118vw, 1.5rem);
