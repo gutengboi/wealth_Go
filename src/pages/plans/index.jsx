@@ -275,8 +275,8 @@ const Plan = () => {
               <h1 className="plan-per">10%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Min : $30 </p>
-                <p>Max : $499 </p>
+                <p>Minimum Deposit: $30 </p>
+                <p>Maximum deposit : $499 </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">
@@ -290,16 +290,15 @@ const Plan = () => {
               <h1 className="plan-per">30%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Min : $500 </p>
-                <p>Max : $999 </p>
+                <p>Minimum Deposit : $500 </p>
+                <p>Maximum deposit : $999 </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">
                 <button onClick={handleOpen1}>Invest With Balance</button>
               </div>
             </div>
-            <img className="plan-crown silver" src={silver} alt="" />
-            <img className="plan-crown silver" src={silver} alt="" />
+          
           </div>
           <div className="planpage-cards">
             <div className="planpage-card">
@@ -307,16 +306,15 @@ const Plan = () => {
               <h1 className="plan-per">60%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Min : $1000 </p>
-                <p>Max : $4999 </p>
+                <p>Minimum Deposit : $1000 </p>
+                <p>Maximum deposit : $4999 </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">
                 <button onClick={handleOpen2}>Invest With Balance</button>
               </div>
             </div>
-            <img className="plan-crown" src={crown} alt="" />
-            <img className="plan-crown" src={crown} alt="" />
+            
           </div>
           <div className="planpage-cards">
             <div className="planpage-card">
@@ -324,8 +322,8 @@ const Plan = () => {
               <h1 className="plan-per">100%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Min : $5000 </p>
-                <p>Max : Unlimited </p>
+                <p>Minimum Deposit : $5000 </p>
+                <p>Maximum deposit: Unlimited </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">
