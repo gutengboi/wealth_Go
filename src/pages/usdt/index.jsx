@@ -93,7 +93,7 @@ const Usdt = () => {
               <li> Then go to your wallet app and make a payment.</li>
             </ol>
             <p>
-              Wallet address: <span style={{ fontWeight: 600 }}>{wallet}</span>
+              Wallet address: <span style={{ fontWeight: 500 }}>{wallet}</span>
             </p>
             <p>
               In a few minutes after payment, your balance would be updated.
@@ -128,7 +128,7 @@ const Usdt = () => {
         </div>
       </div>
       <div className="usdt-paybtn">
-        <button onClick={sendPayment}>Sent Payment</button>
+        <button onClick={sendPayment}>Deposit Now</button>
       </div>
 
       <ToastContainer
