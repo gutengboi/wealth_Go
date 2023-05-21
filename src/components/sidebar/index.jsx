@@ -170,13 +170,13 @@ const Sidebar = ({
             <Divider />
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
-                component="img"
-                alt="profile"
-                src={avatar}
-                height="40px"
-                width="40px"
-                borderRadius="50%"
-                sx={{ objectFit: "cover" }}
+                // component="img"
+                // alt="profile"
+                // src={avatar}
+                // height="40px"
+                // width="40px"
+                // borderRadius="50%"
+                // sx={{ objectFit: "cover" }}
               />
               <Box textAlign="left">
                 <Typography
@@ -191,12 +191,12 @@ const Sidebar = ({
                   //   sx={{ color: theme.palette.secondary[100] }}
                 >
                   {/* {user.occupation} */}
-                  banker
+                  Investor
                 </Typography>
               </Box>
-              <SettingsOutlined
+              {/* <SettingsOutlined
               // sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
-              />
+              /> */}
             </FlexBetween>
           </Box>
         </Drawer>

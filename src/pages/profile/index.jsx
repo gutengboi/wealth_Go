@@ -84,9 +84,9 @@ const Profile = () => {
       <Header dashtitle="Profile" dashsub="Welcome to your profile." />
       <div className="profile-container">
         <div className="profile-left">
-          <div className="profile-avatar">
+          {/* <div className="profile-avatar">
             <img src={avatar} alt="profile" />
-          </div>
+          </div> */}
           <div className="profile-change">
             <Link
               to={
