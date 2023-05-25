@@ -28,8 +28,7 @@ const Login = () => {
     if (user) {
       console.log(user);
       // navigate("/dashboard");
-      // window.location.href = "https://wealth-go.vercel.app/dashboard";
-      window.location.href = "https://wealth-go-gutengboi.vercel.app/dashboard";
+      window.location.href = "https://wealth-go-gutengboi.vercel.app//dashboard";
     }
   }, [user, navigate]);
 
@@ -104,7 +103,9 @@ const Login = () => {
               />
             </div>
             <div className="forgot-btn">
-              <button>Forgot passowrd ?</button>
+              <button onClick={() => navigate("/forgot-password")}>
+                Forgot passowrd ?
+              </button>
             </div>
             <div className="login-btn">
               <button type="submit">Log In</button>

@@ -29,6 +29,8 @@ import AdminDash from "pages/admindash";
 import AdminTransactions from "pages/admintransactions";
 import AdminTickets from "pages/admintickets";
 import Wallet from "pages/wallets";
+import ForgotPassword from "components/forgotPassword";
+import ForgotVerify from "components/forgotverify";
 
 const App = () => {
   return (
@@ -45,6 +47,8 @@ const App = () => {
             <Route path="/admin-login" element={<AdminLogin />} />
             <Route path="/register" element={<VerifyEmail />} />
             <Route path="/register/verify" element={<Register />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/forgot-password/verify" element={<ForgotVerify />} />
           </Route>
           <Route element={<DashboardLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
