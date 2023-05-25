@@ -2,7 +2,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://wealthgo.onrender.com/",
+    baseUrl: "https://wealthgo-server-wealthgo.onrender.com",
+    // baseUrl: "https://werenderalthgo.on.com/",
 
     // "http://localhost:5000/",
     // process.env.REACT_APP_BASE_URL,

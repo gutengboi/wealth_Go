@@ -30,7 +30,7 @@ const Wallet = () => {
   }, [data, isLoading]);
 
   const handleUpdate = async () => {
-    const response = await fetch(`https://wealthgo.onrender.com/wallet/`, {
+    const response = await fetch(`https://wealthgo-server-wealthgo.onrender.com/wallet/`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json; charset=UTF-8",

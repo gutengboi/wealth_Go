@@ -56,7 +56,7 @@ const Withdraw = () => {
         });
       } else {
         const response = await fetch(
-          `https://wealthgo.onrender.com/transactions/${id}/withdrawals`,
+          `https://wealthgo-server-wealthgo.onrender.com/transactions/${id}/withdrawals`,
           {
             method: "POST",
             body: JSON.stringify({
@@ -118,7 +118,7 @@ const Withdraw = () => {
         });
       } else {
         const response = await fetch(
-          `https://wealthgo.onrender.com/transactions/${id}/withdrawals`,
+          `https://wealthgo-server-wealthgo.onrender.comtransactions/${id}/withdrawals`,
           {
             method: "POST",
             body: JSON.stringify({
@@ -179,7 +179,7 @@ const Withdraw = () => {
         });
       } else {
         const response = await fetch(
-          `https://wealthgo.onrender.com/transactions/${id}/withdrawals`,
+          `https://wealthgo-server-wealthgo.onrender.com/transactions/${id}/withdrawals`,
           {
             method: "POST",
             body: JSON.stringify({

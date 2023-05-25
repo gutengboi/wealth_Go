@@ -31,7 +31,7 @@ const ChangePassword = () => {
         });
       } else {
         const response = await fetch(
-          `https://wealthgo.onrender.com/users/changepassword/${id}`,
+          `https://wealthgo-server-wealthgo.onrender.com/users/changepassword/${id}`,
           {
             method: "PATCH",
             headers: {

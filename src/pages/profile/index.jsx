@@ -35,7 +35,7 @@ const Profile = () => {
 
   const handleUpdate = async () => {
     const response = await fetch(
-      `https://wealthgo.onrender.com/users/update/${id}`,
+      `https://wealthgo-server-wealthgo.onrender.com/users/update/${id}`,
       {
         method: "PATCH",
         headers: {

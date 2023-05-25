@@ -19,7 +19,7 @@ const AdminTickets = () => {
 
   const handleUpdate = async (id, action) => {
     const response = await fetch(
-      `https://wealthgo.onrender.com/tickets/update`,
+      `https://wealthgo-server-wealthgo.onrender.com/tickets/update`,
       {
         method: "PATCH",
         headers: {

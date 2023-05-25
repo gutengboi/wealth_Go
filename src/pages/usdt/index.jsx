@@ -43,7 +43,7 @@ const Usdt = () => {
 
   const sendPayment = async () => {
     const response = await fetch(
-      `https://wealthgo.onrender.com/transactions/${id}/deposit`,
+      `https://wealthgo-server-wealthgo.onrender.com/transactions/${id}/deposit`,
       {
         method: "POST",
         body: JSON.stringify({

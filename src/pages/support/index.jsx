@@ -100,7 +100,7 @@ const Support = () => {
         });
       } else {
         const response = await fetch(
-          `https://wealthgo.onrender.com/tickets/${id}`,
+          `https://wealthgo-server-wealthgo.onrender.com/tickets/${id}`,
           {
             method: "POST",
             body: JSON.stringify({

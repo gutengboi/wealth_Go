@@ -78,7 +78,7 @@ const Plan = () => {
       setAmount("");
     } else {
       const response = await fetch(
-        `https://wealthgo.onrender.com/investments`,
+        `https://wealthgo-server-wealthgo.onrender.com/investments`,
         {
           method: "POST",
           body: JSON.stringify({
@@ -129,7 +129,7 @@ const Plan = () => {
       setAmount("");
     } else {
       const response = await fetch(
-        `https://wealthgo.onrender.com/investments`,
+        `https://wealthgo-server-wealthgo.onrender.com/investments`,
         {
           method: "POST",
           body: JSON.stringify({
@@ -179,7 +179,7 @@ const Plan = () => {
       setAmount("");
     } else {
       const response = await fetch(
-        `https://wealthgo.onrender.com/investments`,
+        `https://wealthgo-server-wealthgo.onrender.com/investments`,
         {
           method: "POST",
           body: JSON.stringify({
@@ -229,7 +229,7 @@ const Plan = () => {
       setAmount("");
     } else {
       const response = await fetch(
-        `https://wealthgo.onrender.com/investments`,
+        `https://wealthgo-server-wealthgo.onrender.com/investments`,
         {
           method: "POST",
           body: JSON.stringify({
