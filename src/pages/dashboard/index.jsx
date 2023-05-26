@@ -220,14 +220,14 @@ const Dashboard = () => {
           <div className="dashboard-mid-card">
             <div className="arrow-right"></div>
             <div className="mid-text">
-              <h6 className="mid-title">$25,000</h6>
+              <h6 className="mid-title">0</h6>
               <p className="s">Pending Withdrawal</p>
             </div>
           </div>
           <div className="dashboard-mid-card">
             <div className="arrow-right"></div>
             <div className="mid-text">
-              <h6 className="mid-title">4</h6>
+              <h6 className="mid-title">0</h6>
               <p className="s">No of Referrals</p>
             </div>
           </div>
