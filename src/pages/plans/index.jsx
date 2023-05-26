@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import Plans from "../../components/plans";
 import Header from "components/header";
+import { useGetUserBalanceQuery, useGetWithdrawalsQuery } from "state/api";
 
 import "./index.css";
 import crown from "../../assets/crown.png";
@@ -28,7 +29,17 @@ const Plan = () => {
   const [open3, setOpen3] = useState(false);
   const [amount, setAmount] = useState(0);
   const id = useSelector((state) => state.global.user?._id);
+  const { data: userGetBalance, isLoading } = useGetUserBalanceQuery(id);
+  const [balance, setBalance] = useState();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isLoading || userGetBalance) {
+      console.log(userGetBalance);
+     
+      setBalance(userGetBalance.currentBalance);
+    }
+  }, [data, isLoading, userGetBalance]);
 
   const handleClose = () => {
     setOpen(false);
@@ -64,7 +75,20 @@ const Plan = () => {
 
   const subPlan1 = async () => {
     let amo = amount;
-    if (amo > 499 || amo < 30) {
+    if (amo > balance) {
+      toast.error("Amount exceeds current balance", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+      handleClose();
+      setAmount("");
+    } else if (amo > 499 || amo < 30) {
       toast.error("Invalid Min or Max Amount", {
         position: "bottom-right",
         autoClose: 5000,
@@ -77,7 +101,7 @@ const Plan = () => {
       });
       handleClose();
       setAmount("");
-    } else {
+    }else {
       const response = await fetch(
         `https://wealthgo-server-wealthgo.onrender.com/investments`,
         {
@@ -116,7 +140,20 @@ const Plan = () => {
 
   const subPlan2 = async () => {
     let amo = amount;
-    if (amo > 999 || amo < 499) {
+    if (amo > balance) {
+      toast.error("Amount exceeds current balance", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+      handleClose();
+      setAmount("");
+    } else if (amo > 999 || amo < 499) {
       toast.error("Invalid Min or Max Amount", {
         position: "bottom-right",
         autoClose: 5000,
@@ -167,7 +204,20 @@ const Plan = () => {
   };
   const subPlan3 = async () => {
     let amo = amount;
-    if (amo > 4999 || amo < 1000) {
+    if (amo > balance) {
+      toast.error("Amount exceeds current balance", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+      handleClose();
+      setAmount("");
+    } else if (amo > 4999 || amo < 1000) {
       toast.error("Invalid Min or Max Amount", {
         position: "bottom-right",
         autoClose: 5000,
@@ -180,7 +230,7 @@ const Plan = () => {
       });
       handleClose();
       setAmount("");
-    } else {
+    }else {
       const response = await fetch(
         `https://wealthgo-server-wealthgo.onrender.com/investments`,
         {
@@ -218,8 +268,21 @@ const Plan = () => {
   };
   const subPlan4 = async () => {
     let amo = amount;
-    if (amo < 5000) {
-      toast.error("Inavlid Amount", {
+    if (amo > balance) {
+      toast.error("Amount exceeds current balance", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+      handleClose();
+      setAmount("");
+    } else if (amo < 5000) {
+      toast.error("Invalid Min or Max Amount", {
         position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -303,8 +366,7 @@ const Plan = () => {
                 <button onClick={handleOpen1}>Invest With Balance</button>
               </div>
             </div>
-            <img className="plan-crown silver" src={silver} alt="" />
-            <img className="plan-crown silver" src={silver} alt="" />
+           
           </div>
           <div className="planpage-cards">
             <div className="planpage-card">
@@ -320,8 +382,7 @@ const Plan = () => {
                 <button onClick={handleOpen2}>Invest With Balance</button>
               </div>
             </div>
-            <img className="plan-crown" src={crown} alt="" />
-            <img className="plan-crown" src={crown} alt="" />
+            
           </div>
           <div className="planpage-cards">
             <div className="planpage-card">
@@ -337,8 +398,7 @@ const Plan = () => {
                 <button onClick={handleOpen3}>Invest With Balance</button>
               </div>
             </div>
-            <img className="plan-crown" src={crown} alt="" />
-            <img className="plan-crown" src={crown} alt="" />
+            
           </div>
         </div>
 
