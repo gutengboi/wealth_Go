@@ -32,7 +32,7 @@ const Customers = () => {
     {
       field: "email",
       headerName: "Email",
-      minWidth: 100,
+      minWidth: 250,
       flex: 1,
     },
     {

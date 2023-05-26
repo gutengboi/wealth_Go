@@ -373,7 +373,7 @@ const Plan = () => {
               <h5>plan 3</h5>
               <h1 className="plan-per">60%</h1>
               <div className="plan-details">
-                <p>AFTER 24 HOURS </p>
+                <p>AFTER 48 HOURS </p>
                 <p>Minimum Deposit : $1000 </p>
                 <p>Maximum deposit : $4999 </p>
                 <p> PRINCIPAL RETURN</p>
@@ -389,7 +389,7 @@ const Plan = () => {
               <h5>plan 4</h5>
               <h1 className="plan-per">100%</h1>
               <div className="plan-details">
-                <p>AFTER 24 HOURS </p>
+                <p>AFTER 72 HOURS </p>
                 <p>Minimum Deposit : $5000 </p>
                 <p>Maximum deposit : Unlimited </p>
                 <p> PRINCIPAL RETURN</p>

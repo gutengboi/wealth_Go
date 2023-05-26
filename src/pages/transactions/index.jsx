@@ -47,7 +47,7 @@ const Transactions = () => {
     {
       field: "createdAt",
       headerName: "Created At",
-      minWidth: 100,
+      minWidth: 200,
       flex: 0.5,
     },
   ];

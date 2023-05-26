@@ -362,7 +362,7 @@ const Withdraw = () => {
                 </div>
                 <div className="form_input">
                   <label htmlFor=""> Withdraw Charge</label>
-                  <input type="text" value={"5.0%"} disabled />
+                  <input type="text" value={"0.1%"} disabled />
                 </div>
                 <div className="form_input">
                   <label htmlFor="fwa">Final Withdraw Amount</label>
@@ -427,8 +427,8 @@ const Withdraw = () => {
         <div className="withdraw-right">
           <h5>Withdrawal Instruction</h5>
           <ol>
-            <li>Step 1: Do this</li>
-            <li>Step 2: Do that</li>
+            <li>Submit your wallet address and you will get your withdrawal amount within 1 hour</li>
+            
           </ol>
         </div>
       </div>
