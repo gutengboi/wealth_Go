@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import fb from "../../assets/fb.svg";
 import ig from "../../assets/ig.svg";
 import twitter from "../../assets/twitter.svg";
+import { Link as ScrollLink } from "react-scroll";
 import "./footer.css";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="footer">
       <div className="footer-container">
@@ -22,16 +24,35 @@ const Footer = () => {
             <h6>USEFUL LINKS</h6>
             <ul>
               <li>
-                <Link>Login</Link>
+                <p onClick={() => navigate("/login")}>Login</p>
               </li>
               <li>
-                <Link>Sign Up</Link>
+                <p onClick={() => navigate("/register")}>Sign Up</p>
               </li>
               <li>
-                <Link> Investment Plans</Link>
+                <Link> 
+                <ScrollLink
+              to="plans"
+              spy={true}
+              smooth={true}
+              duration={200}
+              className="some-class"
+              activeClass="some-active-class">
+                Investment Plans
+                </ScrollLink></Link>
               </li>
               <li>
-                <Link>Mission</Link>
+                <Link>
+                <ScrollLink
+              to="choose"
+              spy={true}
+              smooth={true}
+              duration={200}
+              className="some-class"
+              activeClass="some-active-class">
+                Mission
+              </ScrollLink>
+                </Link>
               </li>
               
             </ul>
@@ -40,10 +61,30 @@ const Footer = () => {
             <h6>Support</h6>
             <ul>
               <li>
-                <Link>About Us</Link>
+                <Link>
+                <ScrollLink
+              to="abouts"
+              spy={true}
+              smooth={true}
+              duration={200}
+              className="some-class"
+              activeClass="some-active-class">
+                About Us
+                </ScrollLink>
+                </Link>
               </li>
               <li>
-                <Link>Contact</Link>
+                <Link>
+                <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={200}
+              className="some-class"
+              activeClass="some-active-class">
+              Contact
+            </ScrollLink>
+                </Link>
               </li>
               <li>
                 <Link> FAQS</Link>
