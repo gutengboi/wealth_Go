@@ -23,7 +23,7 @@ const Deposits = () => {
   const id = useSelector((state) => state.global.user?._id);
   console.log(id);
   const [open, setOpen] = useState(false);
-  const [amount, setAmount] = useState(500);
+  const [amount, setAmount] = useState(0);
   const { data, isLoading } = useGetDepositsQuery(id !== undefined ? id : "");
   const navigate = useNavigate();
   const [deposit, setDeposit] = useState([]);
