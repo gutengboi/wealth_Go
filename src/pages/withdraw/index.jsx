@@ -317,10 +317,10 @@ const Withdraw = () => {
                     }}
                   />
                 </div>
-                <div className="form_input">
+                {/* <div className="form_input">
                   <label htmlFor=""> Withdraw Charge</label>
                   <input type="text" value={"5.0%"} disabled />
-                </div>
+                </div> */}
                 <div className="form_input">
                   <label htmlFor="">Final Withdraw Amount</label>
                   <input type="number" name="fwa" disabled value={fwa} />
@@ -360,10 +360,10 @@ const Withdraw = () => {
                     }}
                   />
                 </div>
-                <div className="form_input">
+                {/* <div className="form_input">
                   <label htmlFor=""> Withdraw Charge</label>
-                  <input type="text" value={"0.1%"} disabled />
-                </div>
+                  <input type="text" value={"0.0%"} disabled />
+                </div> */}
                 <div className="form_input">
                   <label htmlFor="fwa">Final Withdraw Amount</label>
                   <input type="number" name="fwa" disabled value={fwa} />
@@ -397,10 +397,10 @@ const Withdraw = () => {
                     }}
                   />
                 </div>
-                <div className="form_input">
+                {/* <div className="form_input">
                   <label htmlFor=""> Withdraw Charge</label>
                   <input type="text" value={"4.0%"} disabled />
-                </div>
+                </div> */}
                 <div className="form_input">
                   <label htmlFor="fwa">Final Withdraw Amount</label>
                   <input type="number" name="fwa" disabled value={fwa} />
