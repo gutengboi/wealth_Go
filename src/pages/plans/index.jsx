@@ -39,7 +39,7 @@ const Plan = () => {
      
       setBalance(userGetBalance.currentBalance);
     }
-  }, [data, isLoading, userGetBalance]);
+  }, [ isLoading, userGetBalance]);
 
   const handleClose = () => {
     setOpen(false);
