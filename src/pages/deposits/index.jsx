@@ -64,12 +64,6 @@ const Deposits = () => {
       flex: 0.5,
     },
     {
-      field: "customerId",
-      headerName: "Customer ID",
-      minWidth: 200,
-      flex: 0.5,
-    },
-    {
       field: "transactionType",
       headerName: "Transaction Type",
       width: 150,

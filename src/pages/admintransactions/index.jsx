@@ -133,7 +133,7 @@ const AdminTransactions = () => {
       flex: 0.5,
     },
     {
-      field: "email",
+      field: "emailId",
       headerName: "Email",
       minWidth: 200,
       flex: 0.5,

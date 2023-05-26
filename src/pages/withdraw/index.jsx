@@ -24,7 +24,7 @@ const initialValuesBtc = {
 const Withdraw = () => {
   const [form, setForm] = useState("");
   const id = useSelector((state) => state.global.user?._id);
-
+  const email = useSelector((state) => state.global.user?.email);
   const { data } = useGetWithdrawalsQuery(id);
   const { data: userGetBalance, isLoading } = useGetUserBalanceQuery(id);
   const [balance, setBalance] = useState();
@@ -56,11 +56,12 @@ const Withdraw = () => {
         });
       } else {
         const response = await fetch(
-          `https://wealthgo-server-wealthgo.onrender.com/transactions/${id}/withdrawals`,
+          `https://wealthgo.onrender.com/transactions/${id}/withdrawals`,
           {
             method: "POST",
             body: JSON.stringify({
               amount: fwa,
+              emailId: email,
               paymentMethod: "BTC",
               walletAddress: walletAddress,
             }),
@@ -118,11 +119,12 @@ const Withdraw = () => {
         });
       } else {
         const response = await fetch(
-          `https://wealthgo-server-wealthgo.onrender.comtransactions/${id}/withdrawals`,
+          `https://wealthgo.onrender.com/transactions/${id}/withdrawals`,
           {
             method: "POST",
             body: JSON.stringify({
               amount: fwa,
+              emailId: email,
               paymentMethod: "USDT",
               walletAddress: walletAddress,
             }),
@@ -183,6 +185,7 @@ const Withdraw = () => {
           {
             method: "POST",
             body: JSON.stringify({
+              emailId: email,
               amount: fwa,
               paymentMethod: "ETH",
               walletAddress: walletAddress,
@@ -230,12 +233,6 @@ const Withdraw = () => {
       flex: 0.5,
     },
     {
-      field: "customerId",
-      headerName: "Customer ID",
-      minWidth: 200,
-      flex: 0.5,
-    },
-    {
       field: "transactionType",
       headerName: "Transaction Type",
       width: 150,
@@ -264,7 +261,7 @@ const Withdraw = () => {
     {
       field: "createdAt",
       headerName: "Created At",
-      minWidth: 100,
+      minWidth: 200,
       flex: 0.5,
     },
   ];

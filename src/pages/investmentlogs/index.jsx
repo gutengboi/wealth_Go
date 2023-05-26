@@ -45,14 +45,14 @@ const InvestmentPlans = () => {
     {
       field: "createdAt",
       headerName: "Start Date",
-      minWidth: 100,
-      flex: 0.5,
+      minWidth: 250,
+      flex: 0.7,
     },
     {
       field: "expirationTime",
       headerName: "End Date",
-      minWidth: 100,
-      flex: 0.5,
+      minWidth: 250,
+      flex: 0.7,
     },
   ];
 

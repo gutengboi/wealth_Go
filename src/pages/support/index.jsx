@@ -17,6 +17,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Support = () => {
   const id = useSelector((state) => state.global.user?._id);
+  const email = useSelector((state) => state.global.user?.email);
   const [open, setOpen] = useState(false);
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -73,14 +74,14 @@ const Support = () => {
     },
     {
       field: "status",
-      headerName: "Staus",
+      headerName: "Status",
       minWidth: 200,
       flex: 0.5,
     },
     {
       field: "createdAt",
       headerName: "Created At",
-      minWidth: 100,
+      minWidth: 250,
       flex: 0.5,
     },
   ];
@@ -105,6 +106,7 @@ const Support = () => {
             method: "POST",
             body: JSON.stringify({
               customerId: id,
+              email: email,
               subject: subject,
               message: message,
             }),

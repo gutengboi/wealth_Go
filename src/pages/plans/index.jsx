@@ -21,6 +21,7 @@ import { useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 
 const Plan = () => {
+  const email = useSelector((state) => state.global.user?.email);
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -83,6 +84,7 @@ const Plan = () => {
           method: "POST",
           body: JSON.stringify({
             customerId: id,
+            email: email,
             planName: "plan1",
             investAmount: amo,
             percent: 0.1,
@@ -114,7 +116,7 @@ const Plan = () => {
 
   const subPlan2 = async () => {
     let amo = amount;
-    if (amo > 999 || amo < 599) {
+    if (amo > 999 || amo < 499) {
       toast.error("Invalid Min or Max Amount", {
         position: "bottom-right",
         autoClose: 5000,
@@ -134,6 +136,7 @@ const Plan = () => {
           method: "POST",
           body: JSON.stringify({
             customerId: id,
+            email: email,
             planName: "plan2",
             investAmount: amo,
             percent: 0.3,
@@ -184,7 +187,8 @@ const Plan = () => {
           method: "POST",
           body: JSON.stringify({
             customerId: id,
-            planName: "plan1",
+            email: email,
+            planName: "plan3",
             investAmount: amo,
             percent: 0.6,
           }),
@@ -234,7 +238,8 @@ const Plan = () => {
           method: "POST",
           body: JSON.stringify({
             customerId: id,
-            planName: "plan1",
+            email: email,
+            planName: "plan4",
             investAmount: amo,
             percent: 1.0,
           }),
@@ -275,8 +280,8 @@ const Plan = () => {
               <h1 className="plan-per">10%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Minimum Deposit: $30 </p>
-                <p>Maximum deposit : $499 </p>
+                <p>Min : $30 </p>
+                <p>Max : $499 </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">
@@ -290,15 +295,16 @@ const Plan = () => {
               <h1 className="plan-per">30%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Minimum Deposit : $500 </p>
-                <p>Maximum deposit : $999 </p>
+                <p>Min : $500 </p>
+                <p>Max : $999 </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">
                 <button onClick={handleOpen1}>Invest With Balance</button>
               </div>
             </div>
-          
+            <img className="plan-crown silver" src={silver} alt="" />
+            <img className="plan-crown silver" src={silver} alt="" />
           </div>
           <div className="planpage-cards">
             <div className="planpage-card">
@@ -306,15 +312,16 @@ const Plan = () => {
               <h1 className="plan-per">60%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Minimum Deposit : $1000 </p>
-                <p>Maximum deposit : $4999 </p>
+                <p>Min : $1000 </p>
+                <p>Max : $4999 </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">
                 <button onClick={handleOpen2}>Invest With Balance</button>
               </div>
             </div>
-            
+            <img className="plan-crown" src={crown} alt="" />
+            <img className="plan-crown" src={crown} alt="" />
           </div>
           <div className="planpage-cards">
             <div className="planpage-card">
@@ -322,8 +329,8 @@ const Plan = () => {
               <h1 className="plan-per">100%</h1>
               <div className="plan-details">
                 <p>AFTER 24 HOURS </p>
-                <p>Minimum Deposit : $5000 </p>
-                <p>Maximum deposit: Unlimited </p>
+                <p>Min : $5000 </p>
+                <p>Max : Unlimited </p>
                 <p> PRINCIPAL RETURN</p>
               </div>
               <div className="plan-page-btn">

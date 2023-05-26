@@ -8,7 +8,9 @@ import { useDepositMutation } from "state/api";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { useGetWalletsQuery } from "state/api";
+
 const Usdt = () => {
+  const email = useSelector((state) => state.global.user?.email);
   const { data, isLoading } = useGetWalletsQuery();
   const [amount, setAmount] = useState(0);
   const [currency, setCurrency] = useState("");
@@ -48,6 +50,7 @@ const Usdt = () => {
         method: "POST",
         body: JSON.stringify({
           amount: amount,
+          emailId: email,
           paymentMethod: currency,
         }),
         headers: {
@@ -93,7 +96,7 @@ const Usdt = () => {
               <li> Then go to your wallet app and make a payment.</li>
             </ol>
             <p>
-              Wallet address: <span style={{ fontWeight: 500 }}>{wallet}</span>
+              Wallet address: <span style={{ fontWeight: 600 }}>{wallet}</span>
             </p>
             <p>
               In a few minutes after payment, your balance would be updated.
@@ -128,7 +131,7 @@ const Usdt = () => {
         </div>
       </div>
       <div className="usdt-paybtn">
-        <button onClick={sendPayment}>Deposit Now</button>
+        <button onClick={sendPayment}>Sent Payment</button>
       </div>
 
       <ToastContainer
