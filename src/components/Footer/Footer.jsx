@@ -86,9 +86,9 @@ const Footer = () => {
             </ScrollLink>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link> FAQS</Link>
-              </li>  
+              </li>   */}
             </ul>
           </div>
           <div className="footer-crypto">
