@@ -69,7 +69,7 @@ const Support = () => {
     {
       field: "message",
       headerName: "Message",
-      minWidth: 300,
+      minWidth: 700,
       flex: 1,
     },
     {
