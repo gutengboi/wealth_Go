@@ -73,7 +73,7 @@ const Plans = ({ name }) => {
               <p className="card-text">Maximum deposit : $UNLIMITED</p>
               <p className="card-text">PRINCIPAL RETURN</p>
             </div>
-            <button className="card-btn" onClick={() => navigate("/login")}>{name}</button>1
+            <button className="card-btn" onClick={() => navigate("/login")}>{name}</button>
           </div>
         </div>
       </div>

@@ -268,7 +268,7 @@ const Withdraw = () => {
 
   const calculateFwa = (amount) => {
     let newamount = amount;
-    newamount = amount - amount * 0.05;
+    newamount = amount - amount * 0.00;
     setFwa(newamount.toFixed(2));
     // return newamount;
   };
